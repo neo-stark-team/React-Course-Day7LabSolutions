@@ -1,36 +1,20 @@
-Class Exercise Lab
+Practice Home Lab
 
 React Life Cycle - Updating life cycle Hooks
 
 In class components, you can directly extend from React Component to access the lifecycle methods, but to use them in the functional components you need React Hooks.
 
-componentDidMount:
-A lifecycle method runs or executes after the component is mounted and rendered to the DOM. It is called only once during the component's lifecycle after the component mounting is done.
-
 Program:
-A class component Customers is available as below.
-class Customers extends React.Component
-{
-    //componentDidMount() in Class Component
-    state ={
-        customers:[]
-    };
-    componentDidMount(){
-        let data=[
-            {id:101,name:"Charles"},
-            {id:102,name:"Kumar"}
-        ];
-        this.setState({customers:data});
+A class component CountMe is available as below.
+componentDidMount() {
+     document.title = ` ${this.state.count} times`;
     }
-    render()
-    {
-        //Display Customer Data 
-        return <div> </div>;
+    componentDidUpdate() {
+     document.title = ` ${this.state.count} times`;
     }
-}
-export default Customers;
 
-Convert the Customers Class Component into Clients functional component. Display the clients name.
+The above React Class component update the count values in two methods. We need to duplicate the code between these two life cycle methods.
+Convert the CountMe Class Component into FuncCountME functional component.
 You can achieve the same using useEffect hook.
 
 Lab Environment
