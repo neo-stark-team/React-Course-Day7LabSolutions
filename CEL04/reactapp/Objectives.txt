@@ -6,7 +6,7 @@ React normally re-renders a component whenever its parent re-renders. As an opti
 PureComponent is a subclass of Component and supports all the Component APIs. Extending PureComponent is equivalent to defining a custom shouldComponentUpdate method that shallowly compares props and state.
 Program:
 Create a class component Display and convert this component to pure component. That returns greeting message with one of the props name.
-Add two textbox for entering Name and entering AGE. 
+In App component, Add two textbox for entering Name and entering AGE.
 This component re-renders whenever the name changed. To trace the rendering new Date().toLocaleTimeString() print in console screen.
 
 Lab Environment
