@@ -1,21 +1,13 @@
-Practice Home Lab
+Class Exercise Lab
 
-React Life Cycle - Updating life cycle Hooks
+React Life Cycle - Pure Components
 
-In class components, you can directly extend from React Component to access the lifecycle methods, but to use them in the functional components you need React Hooks.
-
+React normally re-renders a component whenever its parent re-renders. As an optimization, you can create a component that React will not re-render when its parent re-renders so long as its new props and state are the same as the old props and state. Class components can opt into this behavior by extending PureComponent
+PureComponent is a subclass of Component and supports all the Component APIs. Extending PureComponent is equivalent to defining a custom shouldComponentUpdate method that shallowly compares props and state.
 Program:
-A class component CountMe is available as below.
-componentDidMount() {
-     document.title = ` ${this.state.count} times`;
-    }
-    componentDidUpdate() {
-     document.title = ` ${this.state.count} times`;
-    }
-
-The above React Class component update the count values in two methods. We need to duplicate the code between these two life cycle methods.
-Convert the CountMe Class Component into FuncCountME functional component.
-You can achieve the same using useEffect hook.
+Create a class component Display and convert this component to pure component. That returns greeting message with one of the props name.
+Add two textbox for entering Name and entering AGE. 
+This component re-renders whenever the name changed. To trace the rendering new Date().toLocaleTimeString() print in console screen.
 
 Lab Environment
 
