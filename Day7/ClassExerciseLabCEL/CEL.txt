@@ -1,0 +1,5 @@
+Class Exercise Lab 
+React Lifecycle
+1. React Component life cycle
+2. Updating life cycle hooks, Pure Components
+3. React’s DOM Updating Strategy
