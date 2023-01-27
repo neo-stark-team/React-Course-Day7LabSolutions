@@ -1,13 +1,15 @@
-Class Exercise Lab
+Practice Home Lab
 
 React Life Cycle - Pure Components
 
 React normally re-renders a component whenever its parent re-renders. As an optimization, you can create a component that React will not re-render when its parent re-renders so long as its new props and state are the same as the old props and state. Class components can opt into this behavior by extending PureComponent
 PureComponent is a subclass of Component and supports all the Component APIs. Extending PureComponent is equivalent to defining a custom shouldComponentUpdate method that shallowly compares props and state.
 Program:
-Create a class component Display and convert this component to pure component. That returns greeting message with one of the props name.
-Add two textbox for entering Name and entering AGE. 
-This component re-renders whenever the name changed. To trace the rendering new Date().toLocaleTimeString() print in console screen.
+Convert App component to pure component. That returns greeting message 'WELCOME' with one of the props name.
+In App component, Add one textbox for entering Name and one button to increment the AGE.
+set the default name: IamNEO and age: 15
+App.js has code. Convert App Component to pure component.
+This component re-renders whenever the name changed.
 
 Lab Environment
 
